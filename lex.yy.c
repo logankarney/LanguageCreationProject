@@ -466,13 +466,18 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "zoomjoystrong.lex"
-#line 2 "zoomjoystrong.lex"
+/*
+	Program that defines context free grammar of the zoomjoystrong language
+
+	Author: Logan Karney
+*/
+#line 8 "zoomjoystrong.lex"
     #include <stdio.h>
 	#include "zoomjoystrong.h"
 	#include "zoomjoystrong.tab.h"
     int cur_line = 1;
-#line 474 "lex.yy.c"
-#line 475 "lex.yy.c"
+#line 479 "lex.yy.c"
+#line 480 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -689,10 +694,10 @@ YY_DECL
 		}
 
 	{
-#line 8 "zoomjoystrong.lex"
+#line 14 "zoomjoystrong.lex"
 
 
-#line 695 "lex.yy.c"
+#line 700 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -751,72 +756,72 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 10 "zoomjoystrong.lex"
+#line 16 "zoomjoystrong.lex"
 { return (END_PROGRAM);}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 11 "zoomjoystrong.lex"
+#line 17 "zoomjoystrong.lex"
 { return (END_OF_LINE);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 "zoomjoystrong.lex"
+#line 18 "zoomjoystrong.lex"
 { return (POINT);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 13 "zoomjoystrong.lex"
+#line 19 "zoomjoystrong.lex"
 { return (LINE);}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 14 "zoomjoystrong.lex"
+#line 20 "zoomjoystrong.lex"
 { return (CIRCLE);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 15 "zoomjoystrong.lex"
+#line 21 "zoomjoystrong.lex"
 { return (RECTANGLE);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 16 "zoomjoystrong.lex"
+#line 22 "zoomjoystrong.lex"
 { return (SET_COLOR);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 17 "zoomjoystrong.lex"
+#line 23 "zoomjoystrong.lex"
 { return (INT);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 18 "zoomjoystrong.lex"
+#line 24 "zoomjoystrong.lex"
 { return (FLOAT);}
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 19 "zoomjoystrong.lex"
+#line 25 "zoomjoystrong.lex"
 { cur_line++;}
 	YY_BREAK
 case 11:
 /* rule 11 can match eol */
 YY_RULE_SETUP
-#line 20 "zoomjoystrong.lex"
+#line 26 "zoomjoystrong.lex"
 ;
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 21 "zoomjoystrong.lex"
+#line 27 "zoomjoystrong.lex"
 { printf("Error at line %d\n"), cur_line;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 23 "zoomjoystrong.lex"
+#line 29 "zoomjoystrong.lex"
 ECHO;
 	YY_BREAK
-#line 819 "lex.yy.c"
+#line 824 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1821,7 +1826,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 23 "zoomjoystrong.lex"
+#line 29 "zoomjoystrong.lex"
 
 
 /*int main(int argc, char** argv){

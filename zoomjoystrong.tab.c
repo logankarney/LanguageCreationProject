@@ -62,7 +62,7 @@
 
 
 /* Copy the first part of user declarations.  */
-#line 1 "zoomjoystrong.y" /* yacc.c:339  */
+#line 8 "zoomjoystrong.y" /* yacc.c:339  */
 
 
 	#include <stdio.h>
@@ -434,8 +434,8 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    24,    24,    27,    28,    31,    32,    35,    36,    37,
-      40,    43,    44,    47,    48
+       0,    31,    31,    34,    35,    38,    39,    42,    43,    44,
+      47,    50,    51,    54,    55
 };
 #endif
 
@@ -1452,7 +1452,7 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 51 "zoomjoystrong.y" /* yacc.c:1907  */
+#line 58 "zoomjoystrong.y" /* yacc.c:1907  */
 
 int main(int argc, char** argv){
 	setup();

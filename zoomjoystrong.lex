@@ -1,3 +1,9 @@
+/*
+	Program that defines context free grammar of the zoomjoystrong language
+
+	Author: Logan Karney
+*/
+
 %{
     #include <stdio.h>
 	#include "zoomjoystrong.h"

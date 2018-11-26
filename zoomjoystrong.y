@@ -1,3 +1,10 @@
+/*
+	Program that assigns meaning to the Context Free Grammer of the flex file
+
+	@Author: Logan Karney
+	--Received help from Ryan Eisenbarth on imports and general questions
+*/
+
 %{
 
 	#include <stdio.h>
