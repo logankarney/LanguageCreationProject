@@ -465,12 +465,14 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "zjs.lex"
-#line 2 "zjs.lex"
+#line 1 "zoomjoystrong.lex"
+#line 2 "zoomjoystrong.lex"
     #include <stdio.h>
-    int line = 1;
-#line 472 "lex.yy.c"
-#line 473 "lex.yy.c"
+	#include "zoomjoystrong.h"
+	#include "zoomjoystrong.tab.h"
+    int cur_line = 1;
+#line 474 "lex.yy.c"
+#line 475 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -687,10 +689,10 @@ YY_DECL
 		}
 
 	{
-#line 6 "zjs.lex"
+#line 8 "zoomjoystrong.lex"
 
 
-#line 693 "lex.yy.c"
+#line 695 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -749,72 +751,72 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 8 "zjs.lex"
-{ printf("END_PROGRAM\n");}
+#line 10 "zoomjoystrong.lex"
+{ return (END_PROGRAM);}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 9 "zjs.lex"
-{ printf("END_STATEMENT\n");}
+#line 11 "zoomjoystrong.lex"
+{ return (END_OF_LINE);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 10 "zjs.lex"
-{ printf("POINT\n");}
+#line 12 "zoomjoystrong.lex"
+{ return (POINT);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 11 "zjs.lex"
-{ printf("LINE\n");}
+#line 13 "zoomjoystrong.lex"
+{ return (LINE);}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 12 "zjs.lex"
-{ printf("CIRCLE\n");}
+#line 14 "zoomjoystrong.lex"
+{ return (CIRCLE);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 13 "zjs.lex"
-{ printf("RECTANGLE\n");}
+#line 15 "zoomjoystrong.lex"
+{ return (RECTANGLE);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 14 "zjs.lex"
-{ printf("SET_COLOR\n");}
+#line 16 "zoomjoystrong.lex"
+{ return (SET_COLOR);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 15 "zjs.lex"
-{ printf("INT\n");}
+#line 17 "zoomjoystrong.lex"
+{ return (INT);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 16 "zjs.lex"
-{ printf("FLOAT\n");}
+#line 18 "zoomjoystrong.lex"
+{ return (FLOAT);}
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 17 "zjs.lex"
-{ line++;}
+#line 19 "zoomjoystrong.lex"
+{ cur_line++;}
 	YY_BREAK
 case 11:
 /* rule 11 can match eol */
 YY_RULE_SETUP
-#line 18 "zjs.lex"
+#line 20 "zoomjoystrong.lex"
 ;
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 19 "zjs.lex"
-{ printf("Error at line %d\n", line);}
+#line 21 "zoomjoystrong.lex"
+{ printf("Error at line %d\n"), cur_line;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 21 "zjs.lex"
+#line 23 "zoomjoystrong.lex"
 ECHO;
 	YY_BREAK
-#line 817 "lex.yy.c"
+#line 819 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1819,11 +1821,11 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 21 "zjs.lex"
+#line 23 "zoomjoystrong.lex"
 
 
-int main(int argc, char** argv){
+/*int main(int argc, char** argv){
   yylex();
   return 0;
-}
+}*/
 
